@@ -26,6 +26,19 @@
   "items": [
     {
       "type": "TextView",
+      "name": "AsakaMod",
+      "color": "$menu_item_color",
+      "size": 13,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "open": "AsakaMod"
+    },
+    {
+      "type": "TextView",
       "name": "世界",
       "color": "$menu_item_color",
       "size": 13,
