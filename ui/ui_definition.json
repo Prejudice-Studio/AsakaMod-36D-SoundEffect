@@ -15,7 +15,8 @@
     "ui_demo",
     "ui_about",
     "ui_web",
-    "ui_video"
+    "ui_video",
+    "AsakaMod"
   ],
   "fun": [
     "script_build_tool",
