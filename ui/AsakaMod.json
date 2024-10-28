@@ -1,7 +1,7 @@
 {
   "type": "Menu",
   "title": {
-    "name": "音频播放",
+    "name": "AsakaMod",
     "size": 15,
     "elevation": 3,
     "background": "#7581FF",
@@ -37,7 +37,7 @@
       "color": "#8CFFE4",
       "size": 12,
       "padding": [5, 5, 5, 5],
-      "load_script": "36D音频播放.js"
+      "load_script": "AsakaMod-36D-SoundEffect.js"
     },
     {
       "type": "TextView",
