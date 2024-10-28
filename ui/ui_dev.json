@@ -1,0 +1,88 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "开发类",
+    "size": 15,
+    "elevation": 3,
+    "background": "$menu_title_background_color",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$menu_title_gradient_text_begin_color",
+      "$menu_title_gradient_text_end_color"
+    ],
+    "image_scaled": true
+  },
+  "color": "$menu_color",
+  "alpha": 0.85,
+  "can_close": true,
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+  "hide": true,
+  "items": [
+    {
+      "type": "Switch",
+      "name": "崩溃服务器",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_crash_server",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "particle",
+          "name": "粒子爆炸",
+          "color": "$menu_item_color",
+          "size": 10
+        },
+        {
+          "type": "CheckBox",
+          "key": "multipleRpc",
+          "name": "多发RPC",
+          "color": "$menu_item_color",
+          "size": 10
+        },
+        {
+          "type": "CheckBox",
+          "key": "forwardRpc",
+          "name": "转发RPC",
+          "color": "$menu_item_color",
+          "size": 10
+        },
+        {
+          "type": "CheckBox",
+          "key": "antiPacket",
+          "name": "反数据包攻击",
+          "color": "$menu_item_color",
+          "size": 10
+        },
+        {
+          "type": "SeekBar",
+          "key": "count",
+          "format": "数据包%d个",
+          "color": "$menu_item_color",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 10000,
+          "min": 1,
+          "max": 100000
+        }
+      ]
+    }
+  ]
+}

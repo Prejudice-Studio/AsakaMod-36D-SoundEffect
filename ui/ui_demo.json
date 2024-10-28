@@ -1,0 +1,294 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "参考示例",
+    "elevation": 3,
+    "background": "$menu_title_background_color",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "margins": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "colors": [
+      "$menu_title_gradient_text_begin_color",
+      "$menu_title_gradient_text_end_color"
+    ],
+    "icon": {
+      "image": "ic_action_close.png",
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "margins": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "color": "$menu_color",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "image": "background.gif",
+  "params": [
+    -2,
+    -2
+  ],
+  "padding": [
+    3,
+    0,
+    3,
+    0
+  ],
+  "margins": [
+    3,
+    0,
+    3,
+    0
+  ],
+  "show_dividers": true,
+  "radius": 10,
+  "items": [
+    {
+      "type": "TextView",
+      "name": "加载脚本",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ],
+      "load_script": "demo.js",
+      "gravity": [
+        "left",
+        "top"
+      ]
+    },
+    {
+      "type": "TextView",
+      "name": "发送消息",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ],
+      "send_message": "你好，世界！",
+      "gravity": [
+        "center"
+      ]
+    },
+    {
+      "type": "TextView",
+      "name": "点击音效",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ],
+      "sound": "http://file.packet.sbs/bgm.mp3"
+    },
+    {
+      "type": "Switch",
+      "name": "开关音效",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "on_sound": "abc_config_activityDefaultDur.mp3",
+      "off_sound": "abc_config_activityShortDur.mp3",
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [
+          35,
+          35
+        ],
+        "name": "测试",
+        "on_sound": "abc_config_activityDefaultDur.mp3",
+        "off_sound": "abc_config_activityShortDur.mp3"
+      }
+    },
+    {
+      "type": "TextView",
+      "name": "执行命令",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ],
+      "run_command": "/w @s 你好，世界！"
+    },
+    {
+      "type": "TextView",
+      "name": "快捷按钮执行命令",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [
+          35,
+          35
+        ],
+        "name": "测试命令",
+        "run_command": "/w @s 你好，世界！"
+      }
+    },
+    {
+      "type": "TextView",
+      "name": "GIF图标",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ],
+      "shortcut": {
+        "type": "ClickButton",
+        "params": [
+          35,
+          35
+        ],
+        "icon": "background.gif",
+        "no_circle": true
+      }
+    },
+    {
+      "type": "TextView",
+      "name": "执行插件命令",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ],
+      "plugin_command": "/ww help"
+    },
+    {
+      "type": "TextView",
+      "name": "执行插件命令调参",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ],
+      "plugin_command": "/ww mod {\"id\": 33, \"value\": true, \"player\": true, \"speed\": 20.0}",
+      "tip": "自动攻击调参完成"
+    },
+    {
+      "type": "TextView",
+      "name": "加载NBT",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ],
+      "load_nbt": "demo",
+      "tip": "加载nbt目录文件或者是直接的nbt数据"
+    },
+    {
+      "type": "Switch",
+      "name": "快捷键开关",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [
+          35,
+          35
+        ],
+        "name": "测试",
+        "on_text": "我开启了",
+        "off_text": "我关闭了"
+      }
+    },
+    {
+      "type": "EditText",
+      "name": "编辑文本",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ],
+      "max_lines": 1,
+      "text": "测试"
+    },
+    {
+      "type": "Switch",
+      "name": "测试功能-开关",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_custom_01",
+      "warning": "可以与脚本交互,在ui_definition注册功能tag"
+    },
+    {
+      "type": "TextView",
+      "name": "测试功能-点击",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        10,
+        5,
+        10,
+        5
+      ],
+      "tag": "fun_custom_02",
+      "warning": "可以与脚本交互,在ui_definition注册功能tag"
+    }
+  ]
+}

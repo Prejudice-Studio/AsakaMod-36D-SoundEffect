@@ -1,0 +1,19 @@
+{
+  "type": "Menu",
+  "title": "网页",
+  "title_bg_color": "$menu_title_background_color",
+  "color": "$menu_color",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "items": [
+    {
+      "type": "Web",
+      "url": "https://www.baidu.com",
+      "params": [
+        -1,
+        400
+      ]
+    }
+  ]
+}

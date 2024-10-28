@@ -1,0 +1,248 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "设置类",
+    "size": 15,
+    "elevation": 3,
+    "background": "$menu_title_background_color",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$menu_title_gradient_text_begin_color",
+      "$menu_title_gradient_text_end_color"
+    ],
+    "image_scaled": true
+  },
+  "color": "$menu_color",
+  "alpha": 0.85,
+  "can_close": true,
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+  "hide": true,
+  "items": [
+    {
+      "type": "Switch",
+      "name": "显示水印",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_watermark"
+    },
+    {
+      "type": "TextView",
+      "name": "删除游戏数据",
+      "color": "$menu_item_set_color",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "tag": "fun_delete_app_data"
+    },
+    {
+      "type": "TextView",
+      "name": "删除用户数据",
+      "color": "$menu_item_set_color",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "tag": "fun_delete_user_data"
+    },
+    {
+      "type": "TextView",
+      "name": "删除下载包缓存",
+      "color": "$menu_item_set_color",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "tag": "fun_delete_pack_cache"
+    },
+    {
+      "type": "TextView",
+      "name": "退出游戏登录",
+      "color": "$menu_item_set_color",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "tag": "fun_netease_logout"
+    },
+    {
+      "type": "TextView",
+      "name": "RN显示",
+      "color": "$menu_item_set_color",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "tag": "fun_rn_visible"
+    },
+    {
+      "type": "TextView",
+      "name": "RN隐藏",
+      "color": "$menu_item_set_color",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "tag": "fun_rn_gone"
+    },
+    {
+      "type": "TextView",
+      "name": "RN开启",
+      "color": "$menu_item_set_color",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "tag": "fun_rn_open"
+    },
+    {
+      "type": "TextView",
+      "name": "RN关闭",
+      "color": "$menu_item_set_color",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "tag": "fun_rn_close"
+    },
+    {
+      "type": "TextView",
+      "name": "显示开发配置窗口",
+      "color": "$menu_item_set_color",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "tag": "fun_rn_show_dev_options_dialog"
+    },
+    {
+      "type": "TextView",
+      "name": "MCPDecrypt",
+      "color": "$menu_item_set_color",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "tag": "fun_mcp_decrypt"
+    },
+    {
+      "type": "Switch",
+      "name": "RN Debug",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "tag": "fun_rn_debugable"
+    },
+    {
+      "type": "Switch",
+      "name": "加入游戏自动复制地址",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "tag": "fun_join_copy_address"
+    },
+    {
+      "type": "Switch",
+      "name": "悬浮窗口半屏显示",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "checked": true,
+      "register_setting": "setting_window_cut"
+    },
+    {
+      "type": "Switch",
+      "name": "隐藏菜单快捷按钮(长按)",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_hide_menu_shortcut",
+      "shortcut": {
+        "type": "CheckedButton",
+        "params": [
+          35,
+          35
+        ],
+        "icon": "ic_menu_show.png",
+        "on": "ic_menu_hide.png",
+        "off": "ic_menu_show.png"
+      }
+    },
+    {
+      "type": "TextView",
+      "name": "关于",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "open": "ui_about"
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "type": "Menu",
+  "title": {
+    "name": "移动类",
+    "size": 15,
+    "elevation": 3,
+    "background": "$menu_title_background_color",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "$menu_title_gradient_text_begin_color",
+      "$menu_title_gradient_text_end_color"
+    ],
+    "image_scaled": true
+  },
+  "color": "$menu_color",
+  "alpha": 0.85,
+  "can_close": true,
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
+  "hide": true,
+  "items": [
+    {
+      "type": "Switch",
+      "name": "高跳",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_jump_high",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "val",
+          "format": "力度%.2f",
+          "color": "$menu_item_color",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.75,
+          "min": 0.1,
+          "max": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "移动跳跃",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_move_jump"
+    },
+    {
+      "type": "Switch",
+      "name": "自动滑翔",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_gliding"
+    },
+    {
+      "type": "Switch",
+      "name": "自动游泳",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_swimming"
+    },
+    {
+      "type": "Switch",
+      "name": "自动冲刺",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_auto_sprint",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "extra_speed",
+          "name": "额外加速",
+          "color": "$menu_item_color",
+          "size": 8
+        },
+        {
+          "type": "SeekBar",
+          "key": "speed",
+          "format": "移动速度%.1f",
+          "color": "$menu_item_color",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.3,
+          "min": 0.1,
+          "max": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "踏空",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_air_jump",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "auto_jump",
+          "name": "自动跳跃",
+          "color": "$menu_item_color",
+          "size": 8
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "冲刺",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_air_sprint",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "move_speed",
+          "format": "移动速度%.2f",
+          "color": "$menu_item_color",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 1.1,
+          "min": 0.1,
+          "max": 3.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "up_down_speed",
+          "format": "上下速度%.2f",
+          "color": "$menu_item_color",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 2.0,
+          "min": 0.0,
+          "max": 20.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "自动前进",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_auto_forward"
+    },
+    {
+      "type": "Switch",
+      "name": "点击传送",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_click_teleport"
+    },
+    {
+      "type": "Switch",
+      "name": "虚空回弹",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_anti_void",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "speed",
+          "format": "下落速度%.2f",
+          "color": "$menu_item_color",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 1.3,
+          "min": 0.1,
+          "max": 3.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "无蛛网/细雪减速",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_no_web"
+    },
+    {
+      "type": "Switch",
+      "name": "使用物品不减速",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_no_slow_down"
+    },
+    {
+      "type": "Switch",
+      "name": "自动爬梯",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_auto_ladder",
+      "items": [
+        {
+          "type": "SeekBar",
+          "key": "speed",
+          "format": "速度%.3f",
+          "color": "$menu_item_color",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 0.6,
+          "min": 0.1,
+          "max": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Switch",
+      "name": "水上行走",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        0
+      ],
+      "tag": "fun_jesus"
+    },
+    {
+      "type": "Switch",
+      "name": "坐骑飞行",
+      "color": "$menu_item_color",
+      "size": 10,
+      "padding": [
+        5,
+        0,
+        5,
+        10
+      ],
+      "tag": "fun_ride_flying",
+      "items": [
+        {
+          "type": "CheckBox",
+          "key": "no_clip",
+          "name": "允许穿墙",
+          "color": "$menu_item_color",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "no_move",
+          "name": "灵魂出窍",
+          "color": "$menu_item_color",
+          "size": 8
+        },
+        {
+          "type": "CheckBox",
+          "key": "update_chunk",
+          "name": "更新区块",
+          "color": "$menu_item_color",
+          "size": 8,
+          "on": "使用船飞行时开启可以自动加载区块"
+        },
+        {
+          "type": "SeekBar",
+          "key": "move_speed",
+          "format": "移动速度%.2f",
+          "color": "$menu_item_color",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 4.0,
+          "min": 0.1,
+          "max": 20.0
+        },
+        {
+          "type": "SeekBar",
+          "key": "up_down_speed",
+          "format": "上下速度%.2f",
+          "color": "$menu_item_color",
+          "size": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": 1.5,
+          "min": 0.1,
+          "max": 20.0
+        }
+      ]
+    }
+  ]
+}

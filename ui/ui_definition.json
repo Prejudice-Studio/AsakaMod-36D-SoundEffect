@@ -1,0 +1,29 @@
+{
+  "name": "跑路科技默认UI",
+  "theme": "Theme.MaterialComponents.DayNight",
+  "ui": [
+    "ui_main",
+    "ui_world",
+    "ui_player",
+    "ui_combat",
+    "ui_movement",
+    "ui_render",
+    "ui_network",
+    "ui_auxiliary",
+    "ui_settings",
+    "ui_dev",
+    "ui_demo",
+    "ui_about",
+    "ui_web",
+    "ui_video"
+  ],
+  "fun": [
+    "script_build_tool",
+    "script_new_touch_control"
+  ],
+  "script": [
+    "base_script.js",
+    "build_tool.js",
+    "new_touch_control.js"
+  ]
+}
